@@ -40,23 +40,13 @@
         <!-- Menu-->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="index.php">Início</a>
-                </li>
 
-                <li>
-                    <a href="sobre.php">Sobre</a>
-                </li>
+                <li class="<?php if($Pag == 'index.php') echo 'active' ?>"><a href="index">Início</a></li>
+                    <li class="<?php if($Pag == 'sobre.php') echo 'active' ?>"><a href="sobre">Sobre</a></li>
+                    <li class="<?php if($Pag == 'produto.php') echo 'active' ?>"><a href="produto">Produtos</a></li>
+                    <li class="<?php if($Pag == 'servicos.php') echo 'active' ?>"><a href="servicos">Serviços</a></li>
+                    <li class="<?php if($Pag == 'contato.php') echo 'active' ?>"><a href="contato">Contato</a></li>
 
-                <li>
-                    <a href="produto.php">Produtos</a>
-                </li>
-                <li>
-                    <a href="servicos.php">Serviços</a>
-                </li>
-                <li>
-                    <a href="contato.php">Contato</a>
-                </li>
         </div>
 </nav>
 

@@ -1,3 +1,20 @@
+<?php
+$rota = $_SERVER['REQUEST_URI'];
+   $rota = explode("/", $rota);
+
+       if($rota[1] == ""){
+             $Pag = "index.php";
+
+if(file_exists($rota[1].".php"))
+{
+                   $Pag = $rota[1].".php";
+}
+           else
+           {
+                 $Pag = "error404.php";
+             }
+?>
+
 <?php require_once("menu.php")?>
 
 <!-- Slide Carousel -->
@@ -81,3 +98,4 @@
 </body>
 
 </html>
+

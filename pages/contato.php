@@ -1,5 +1,3 @@
-<?php require_once("menu.php")?>
-
 <div class="container">
 
 <!-- Endereço do Salão-->
@@ -19,19 +17,3 @@
 </div>
 
 <?php require_once("formulariocontato.php")?>
-
-<!-- Footer -->
-<?php require_once("rodape.php")?>
-
-</div>
-
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-</body>
-
-</html>

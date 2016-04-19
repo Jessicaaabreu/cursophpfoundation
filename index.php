@@ -22,6 +22,8 @@
 <body>
 
 <?php
+
+require_once("conexao.php");
 function verificaRota($url, $rotas)
 {
     if(in_array($url, $rotas)) {

@@ -10,6 +10,9 @@ catch (\PDOException $e){
 $sql= "Select * from clientes";
 $stmt = $conexao->prepare($sql);
 $stmt->execute();
-$res=$stmt->fetchAll(PDO::FETCH_ASSOC);
+$clientes=$stmt->fetchAll(PDO::FETCH_ASSOC);
 
-print_r($res);
+foreach($clientes as $cliente){
+    echo $cliente['nome']." - ".$cliente['email']."<br>";
+
+}

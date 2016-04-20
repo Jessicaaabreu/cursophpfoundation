@@ -7,12 +7,13 @@ catch (\PDOException $e){
     die ("Erro código: ".$e->getCode().": ".$e->getMessage());
 }
 
-$sql= "Select * from clientes";
+$id=1;
+$sql= "Select * from clientes where id= :id";
 $stmt = $conexao->prepare($sql);
+$stmt->BindValue("id",$id);
 $stmt->execute();
-$clientes=$stmt->fetchAll(PDO::FETCH_ASSOC);
+$clientes=$stmt->fetch(PDO::FETCH_ASSOC);
 
-foreach($clientes as $cliente){
-    echo $cliente['nome']." - ".$cliente['email']."<br>";
+print_r($clientes);
 
-}
+

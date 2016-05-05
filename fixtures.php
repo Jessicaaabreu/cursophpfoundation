@@ -355,3 +355,283 @@ VALUES ('sobre', '<div class=\"container\">
 
 echo "Ok\n";
 
+echo "### Inserindo os Dados da pagina PRODUTOS ###\n";
+
+$conexao->query("INSERT INTO `curso_phpfoundation`.`paginas`
+(`pagina`,`conteudo`)
+VALUES ('produtos', '<div class=\"container\">
+
+    <div class=\"col-lg-12\">
+        <h2 class=\"page-header\">Produtos</h2>
+    </div>
+
+    <!-- Painel de Produtos-->
+<div class=\"row\">
+
+    <div class=\"col-md-3 col-sm-6\">
+        <div class=\"panel panel-default text-center\">
+            <div class=\"panel-heading\">
+                        <span class=\"fa-stack fa-5x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-tree fa-stack-1x fa-inverse\"></i>
+                        </span>
+            </div>
+            <div class=\"panel-body\">
+                <h4>Maquiagem</h4>
+                <p>Descrição aqui.</p>
+                <a href=\"#\" class=\"btn btn-primary\">Leia mais</a>
+            </div>
+        </div>
+    </div>
+    <div class=\"col-md-3 col-sm-6\">
+        <div class=\"panel panel-default text-center\">
+            <div class=\"panel-heading\">
+                        <span class=\"fa-stack fa-5x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-car fa-stack-1x fa-inverse\"></i>
+                        </span>
+            </div>
+            <div class=\"panel-body\">
+                <h4>Perfumaria</h4>
+                <p>Descrição aqui.</p>
+                <a href=\"#\" class=\"btn btn-primary\">Leia mais</a>
+            </div>
+        </div>
+    </div>
+    <div class=\"col-md-3 col-sm-6\">
+        <div class=\"panel panel-default text-center\">
+            <div class=\"panel-heading\">
+                        <span class=\"fa-stack fa-5x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-support fa-stack-1x fa-inverse\"></i>
+                        </span>
+            </div>
+            <div class=\"panel-body\">
+                <h4>Cabelo</h4>
+                <p>Descrição aqui.</p>
+                <a href=\"#\" class=\"btn btn-primary\">Leia mais</a>
+            </div>
+        </div>
+    </div>
+    <div class=\"col-md-3 col-sm-6\">
+        <div class=\"panel panel-default text-center\">
+            <div class=\"panel-heading\">
+                        <span class=\"fa-stack fa-5x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-database fa-stack-1x fa-inverse\"></i>
+                        </span>
+            </div>
+            <div class=\"panel-body\">
+                <h4>Corpo</h4>
+                <p>Descrição aqui.</p>
+                <a href=\"#\" class=\"btn btn-primary\">Leia mais</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+')");
+
+echo "Ok\n";
+
+echo "### Inserindo os Dados da pagina SERVIÇOS ###\n";
+
+$conexao->query("INSERT INTO `curso_phpfoundation`.`paginas`
+(`pagina`,`conteudo`)
+VALUES ('servicos', '<div class=\"container\">
+    <!-- Lista de Serviços -->
+
+    <div class=\"row\">
+        <div class=\"col-lg-12\">
+            <h2 class=\"page-header\">Trabalhamos com:</h2>
+        </div>
+        <br/>
+        <div class=\"col-md-4\">
+            <div class=\"media\">
+                <div class=\"pull-left\">
+                        <span class=\"fa-stack fa-2x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-tree fa-stack-1x fa-inverse\"></i>
+                        </span>
+                </div>
+                <div class=\"media-body\">
+                    <h4 class=\"media-heading\">Serviço 1</h4>
+                    <p>Descrição aqui.</p>
+                </div>
+            </div>
+            <div class=\"media\">
+                <div class=\"pull-left\">
+                        <span class=\"fa-stack fa-2x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-car fa-stack-1x fa-inverse\"></i>
+                        </span>
+                </div>
+                <div class=\"media-body\">
+                    <h4 class=\"media-heading\">Serviço 2</h4>
+                    <p>Descrição aqui.</p>
+                </div>
+            </div>
+            <div class=\"media\">
+                <div class=\"pull-left\">
+                        <span class=\"fa-stack fa-2x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-support fa-stack-1x fa-inverse\"></i>
+                        </span>
+                </div>
+                <div class=\"media-body\">
+                    <h4 class=\"media-heading\">Serviço 3</h4>
+                    <p>Descrição aqui.</p>
+                </div>
+            </div>
+        </div>
+        <div class=\"col-md-4\">
+            <div class=\"media\">
+                <div class=\"pull-left\">
+                        <span class=\"fa-stack fa-2x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-database fa-stack-1x fa-inverse\"></i>
+                        </span>
+                </div>
+                <div class=\"media-body\">
+                    <h4 class=\"media-heading\">Serviço 4</h4>
+                    <p>Descrição aqui.</p>
+                </div>
+            </div>
+            <div class=\"media\">
+                <div class=\"pull-left\">
+                        <span class=\"fa-stack fa-2x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-bomb fa-stack-1x fa-inverse\"></i>
+                        </span>
+                </div>
+                <div class=\"media-body\">
+                    <h4 class=\"media-heading\">Serviço 5</h4>
+                    <p>Descrição aqui.</p>
+                </div>
+            </div>
+            <div class=\"media\">
+                <div class=\"pull-left\">
+                        <span class=\"fa-stack fa-2x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-bank fa-stack-1x fa-inverse\"></i>
+                        </span>
+                </div>
+                <div class=\"media-body\">
+                    <h4 class=\"media-heading\">Serviço 6</h4>
+                    <p>Descrição aqui.</p>
+                </div>
+            </div>
+        </div>
+        <div class=\"col-md-4\">
+            <div class=\"media\">
+                <div class=\"pull-left\">
+                        <span class=\"fa-stack fa-2x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-paper-plane fa-stack-1x fa-inverse\"></i>
+                        </span>
+                </div>
+                <div class=\"media-body\">
+                    <h4 class=\"media-heading\">Serviço 7</h4>
+                    <p>Descrição aqui.</p>
+                </div>
+            </div>
+            <div class=\"media\">
+                <div class=\"pull-left\">
+                        <span class=\"fa-stack fa-2x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-space-shuttle fa-stack-1x fa-inverse\"></i>
+                        </span>
+                </div>
+                <div class=\"media-body\">
+                    <h4 class=\"media-heading\">Serviço 8</h4>
+                    <p>Descrição aqui.</p>
+                </div>
+            </div>
+            <div class=\"media\">
+                <div class=\"pull-left\">
+                        <span class=\"fa-stack fa-2x\">
+                              <i class=\"fa fa-circle fa-stack-2x text-primary\"></i>
+                              <i class=\"fa fa-recycle fa-stack-1x fa-inverse\"></i>
+                        </span>
+                </div>
+                <div class=\"media-body\">
+                    <h4 class=\"media-heading\">Serviço 9</h4>
+                    <p>Descrição aqui.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+')");
+echo "Ok\n";
+
+echo "### Inserindo os Dados da pagina CONTATO ###\n";
+
+$conexao->query("INSERT INTO `curso_phpfoundation`.`paginas`
+(`pagina`,`conteudo`)
+VALUES ('contato','<div class=\"container\">
+
+<!-- Endereço do Salão-->
+<div class=\"col-md-4\">
+    <h3>Contato</h3>
+    <hr/>
+    <p><i class=\"glyphicon glyphicon-home\"></i>
+        <abbr title=\"Endereço\">Endereço</abbr>:São Pedro, Rua Horizonte<br>Itabuna - BA<br></p>
+    </p>
+    <p><i class=\"glyphicon glyphicon-earphone\"></i>
+        <abbr title=\"Telefone\">Telefone</abbr>: (73)9136-2519</p>
+    <p><i class=\"glyphicon-envelope\"></i>
+        <abbr title=\"Email\">Email</abbr>: <a href=\"nome@exemplo.com\">blabla@gmail.com</a>
+    </p>
+
+</div>
+</div>
+
+<div class=\"container\">
+    <div class=\"row\">
+    <div class=\"col-md-8\">
+        <h3>Agende um horário</h3><br/>
+
+        <form name=\"Mensagem\" id=\"contactForm\" method=\"post\" >
+            <div class=\"control-group form-group\">
+                <div class=\"controls\">
+                    <label>Nome:</label>
+                    <input  type=\"text\" class=\"form-control\" name=\"nome\" required data-validation-required-message=\"Insira seu nome aqui.\">
+                    <p class=\"help-block\"></p>
+                </div>
+            </div>
+            <div class=\"control-group form-group\">
+                <div class=\"controls\">
+                    <label>Email:</label>
+                    <input type=\"email\" class=\"form-control\" name=\"email\" required data-validation-required-message=\"Insira seu email aqui.\">
+                </div>
+            </div>
+            <div class=\"control-group form-group\">
+                <div class=\"controls\">
+                    <label>Assunto:</label>
+                    <textarea rows=\"3\" cols=\"10\" class=\"form-control\" name=\"assunto\" required data-validation-required-message=\"Insira o assunto aqui\" maxlength=\"40\" style=\"resize:none\"></textarea>
+                </div>
+            </div>
+            <div class=\"control-group form-group\">
+                <div class=\"controls\">
+                    <label>Mensagem:</label>
+                    <textarea rows=\"10\" cols=\"100\" class=\"form-control\" name=\"mensagem\" required data-validation-required-message=\"Insira a mensagem aqui\" maxlength=\"999\" style=\"resize:none\"></textarea>
+                </div>
+            </div>
+            <div id=\"success\"></div>
+
+            <input type=\"submit\" class=\"btn btn-primary\" value=\"Enviar\">
+
+
+        </form>
+    </div>
+
+</div>
+    </div>
+
+ ')");
+
+
+
+echo "Ok\n";
+

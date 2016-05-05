@@ -1,10 +1,19 @@
-<div class="container">
+<?php
+require_once 'conexao.php';
 
-    <div class="col-lg-12">
-        <h2 class="page-header">Produtos</h2>
-    </div>
 
-    <?php require_once("tabelaprodutos.php"); ?>
+$page='produtos';
+$sql= "Select * from paginas where pagina = :page";
+$stmt = $conexao->prepare($sql);
+$stmt->BindValue("page",$page);
+$stmt->execute();
+$pagina=$stmt->fetch(PDO::FETCH_ASSOC);
 
-</div>
-<br><br><br><br><br><br><br><br>
+if($pagina){
+    echo $pagina['conteudo'];
+}else{
+    echo "O conteúdo dessa página não existe no Banco de Dados!";
+}
+
+
+

@@ -22,6 +22,15 @@
                 <li class="<?php if ($Pag == 'servicos.php') echo 'active' ?>"><a href="servicos">Serviços</a></li>
                 <li class="<?php if ($Pag == 'contato.php') echo 'active' ?>"><a href="contato">Contato</a></li>
 
+                <form action="resultado" class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" name="busca" class="form-control" placeholder="Pesquisar">
+                    </div>
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> </button>
+                </form>
+
+            </ul>
+
         </div>
 </nav>
 

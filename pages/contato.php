@@ -1,19 +1,19 @@
-<div class="container">
+<?php
+require_once 'conexao.php';
 
-<!-- Endereço do Salão-->
-<div class="col-md-4">
-    <h3>Contato</h3>
-    <hr/>
-    <p><i class="glyphicon glyphicon-home"></i>
-        <abbr title="Endereço">Endereço</abbr>:São Pedro, Rua Horizonte<br>Itabuna - BA<br></p>
-    </p>
-    <p><i class="glyphicon glyphicon-earphone"></i>
-        <abbr title="Telefone">Telefone</abbr>: (73)9136-2519</p>
-    <p><i class="glyphicon-envelope"></i>
-        <abbr title="Email">Email</abbr>: <a href="nome@exemplo.com">blabla@gmail.com</a>
-    </p>
 
-</div>
-</div>
+$page='contato';
+$sql= "Select * from paginas where pagina = :page";
+$stmt = $conexao->prepare($sql);
+$stmt->BindValue("page",$page);
+$stmt->execute();
+$pagina=$stmt->fetch(PDO::FETCH_ASSOC);
 
-<?php require_once("formulariocontato.php")?>
+if($pagina){
+    echo $pagina['conteudo'];
+}else{
+    echo "O conteúdo dessa página não existe no Banco de Dados!";
+}
+
+
+

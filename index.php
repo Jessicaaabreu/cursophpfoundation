@@ -32,18 +32,21 @@ function verificaRota($url, $rotas)
     return false;
 }
 
-$rotas = ["home", "sobre", "produtos", "servicos", "contato"];
+$rotas = ["home", "sobre", "produtos", "servicos", "contato","resultado"];
 
 $url = $_SERVER['REQUEST_URI'];
 $url = explode("/", $url);
 
-if($url[1] == "") {
+$url = explode("?", $url[1]);
+$url = $url[0];
+
+if($url == "") {
     $page = "pages/home.php";
 }
 else{
-    if(verificaRota($url[1], $rotas)) {
-        if (file_exists("pages/" . $url[1] . ".php")) {
-            $page = "pages/" . $url[1] . ".php";
+    if(verificaRota($url, $rotas)) {
+        if (file_exists("pages/" . $url . ".php")) {
+            $page = "pages/" . $url . ".php";
         } else {
             $page = "pages/error404.php";
         }

@@ -24,7 +24,7 @@ echo "Ok\n";
 echo "### Inserindo os Dados da Tabela paginas ###\n";
 echo "### Inserindo os Dados da pagina HOME ###\n";
 
-$conexao->query("INSERT INTO `curso_phpfoundation`.`paginas`
+$conexao->query("INSERT INTO `paginas`
 (`pagina`,`conteudo`)
 VALUES ('home', '<!-- Slide Carousel -->
 <header id=\"carousel-example-generic\" class=\"carousel slide\" data-ride=\"carousel\">
@@ -318,7 +318,7 @@ echo "Ok\n";
 
 echo "### Inserindo os Dados da pagina SOBRE ###\n";
 
-$conexao->query("INSERT INTO `curso_phpfoundation`.`paginas`
+$conexao->query("INSERT INTO `paginas`
 (`pagina`,`conteudo`)
 VALUES ('sobre', '<div class=\"container\">
 
@@ -357,7 +357,7 @@ echo "Ok\n";
 
 echo "### Inserindo os Dados da pagina PRODUTOS ###\n";
 
-$conexao->query("INSERT INTO `curso_phpfoundation`.`paginas`
+$conexao->query("INSERT INTO `paginas`
 (`pagina`,`conteudo`)
 VALUES ('produtos', '<div class=\"container\">
 
@@ -437,7 +437,7 @@ echo "Ok\n";
 
 echo "### Inserindo os Dados da pagina SERVIÇOS ###\n";
 
-$conexao->query("INSERT INTO `curso_phpfoundation`.`paginas`
+$conexao->query("INSERT INTO `paginas`
 (`pagina`,`conteudo`)
 VALUES ('servicos', '<div class=\"container\">
     <!-- Lista de Serviços -->
@@ -567,7 +567,7 @@ echo "Ok\n";
 
 echo "### Inserindo os Dados da pagina CONTATO ###\n";
 
-$conexao->query("INSERT INTO `curso_phpfoundation`.`paginas`
+$conexao->query("INSERT INTO `paginas`
 (`pagina`,`conteudo`)
 VALUES ('contato','<div class=\"container\">
 
